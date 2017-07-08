@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title Welcome #{user}
+    include bs.pug
+    
+  body
+    center
+      h1 Welcome #{user} !!
+      iframe(src="1.mp4" width="80%" height="500px")
+      //p Your password is : #{pass}
+      br
+      br
+      a(href="/logout") Logout

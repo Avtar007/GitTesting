@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title Signup
+    include bs.pug
+    
+  body.container
+      div.jumbotron
+        h1 Signup
+      h3 Enter details to Signup
+      h4 #{flag}
+      form(action = "create", method = "post").form-group
+        label Username : 
+        input(type = "text", name = "user", required).form-control
+        br
+        label Password : 
+        input(type = "password" , name = "pass" , required).form-control
+        br  
+        label Confirm Password : 
+        input(type = "password" , name = "passc" , required).form-control
+        br  
+        input(type = "submit").btn-primary
+        input(type = "button" ,onclick="location.href='/'", value = "Back").btn-danger
+            
+      
+          
+      

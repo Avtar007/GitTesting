@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title Welcome Home
+    include bs.pug  
+    
+  body.container
+      div.jumbotron
+        h1 Welcome To Home
+      //iframe(src="1.mp4",height="500",width="700") 
+      h3 Login 
+      h5#id1 #{flag1}
+      h5#id2 #{flag2}
+      form(action = "login", method = "post").form-group
+        label(for="user") Username : 
+        input(type = "text", name = "user", placeholder="Username", required,focused).form-control
+        br
+        label Password : 
+        input(type = "password" , name = "pass", placeholder="Password" , required).form-control
+        br
+        input(type = "submit").btn-primary
+        br
+        br
+      label Not a member yet? 
+      a(href = "/signup") Click Here      
+          
+      
